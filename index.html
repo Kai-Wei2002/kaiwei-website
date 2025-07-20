@@ -22,24 +22,26 @@
 </head>
 
 <body class="bg-gray-900 text-white">
+  <!-- Language toggle top right -->
+  <div class="fixed top-4 right-4 space-x-2">
+    <button onclick="switchLanguage('en')" class="px-2 py-1 bg-gray-800 rounded hover:bg-gray-700 text-sm">EN</button>
+    <button onclick="switchLanguage('zh')" class="px-2 py-1 bg-gray-800 rounded hover:bg-gray-700 text-sm">中</button>
+  </div>
+
   <div class="container mx-auto p-6">
     <!-- Header with photo and name -->
     <div class="flex flex-col md:flex-row items-center md:items-start mb-10">
       <img src="profile.JPG" alt="Kai-Wei Huang" class="w-32 h-32 md:w-48 md:h-48 rounded-full mb-4 md:mb-0 md:mr-6 object-cover border-4 border-cyan-400"/>
       <div class="flex-1 text-center md:text-left">
-        <h1 class="text-4xl font-bold mb-2">Kai-Wei Huang</h1>
-        <div class="space-x-2">
-          <button onclick="switchLanguage('en')" class="px-2 text-sm hover:text-cyan-400">EN</button>
-          |
-          <button onclick="switchLanguage('zh')" class="px-2 text-sm hover:text-cyan-400">中</button>
-        </div>
+        <h1 class="text-4xl font-bold">Kai-Wei Huang</h1>
+        <!-- Motto below name -->
+        <p class="text-lg text-gray-400 mt-2" lang="en">Fortune favors the bold.</p>
+        <p class="text-lg text-gray-400 mt-2" lang="zh">勇敢的人先享受世界</p>
       </div>
     </div>
 
-    <!-- Hero Text -->
+    <!-- Hero Section -->
     <section class="mb-10 p-6 bg-gray-800 rounded-lg flex flex-col items-center text-center">
-      <h2 class="text-3xl md:text-5xl font-extrabold mb-4" lang="en">Fortune favors the bold.</h2>
-      <h2 class="text-3xl md:text-5xl font-extrabold mb-4" lang="zh">勇敢的人先享受世界</h2>
       <p class="text-gray-400 text-lg typing" lang="en">Welcome to my personal website.</p>
       <p class="text-gray-400 text-lg typing" lang="zh">歡迎來到我的個人網站。</p>
     </section>
